@@ -5,7 +5,7 @@ function MyApp({Component, pageProps}) {
     return (
         <PlausibleProvider
             domain="next-tailwind.aaron-dev.nl"
-            customDomain="analytics.aaron-dev.nl"
+            customDomain="https://analytics.aaron-dev.nl"
             selfHosted={true}
             trackOutboundLinks={true}
         >
