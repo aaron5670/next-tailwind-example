@@ -11,7 +11,7 @@ function MyApp({Component, pageProps}) {
             trackOutboundLinks={true}
         >
             <Head>
-                <script async defer data-domain="next-tailwind.aaron-dev.nl" src="http://analytics.aaron-dev.nl/js/plausible.js"/>
+                <script async defer data-domain="next-tailwind.aaron-dev.nl" src="https://analytics.aaron-dev.nl/js/plausible.js"/>
                 <script defer data-domain="next-tailwind.aaron-dev.nl" src="/js/script.js"/>
             </Head>
             <Component {...pageProps} />
