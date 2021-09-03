@@ -2,7 +2,6 @@ import {Fragment} from 'react'
 import {Disclosure, Menu, Transition} from '@headlessui/react'
 import {BellIcon, MenuIcon, XIcon} from '@heroicons/react/outline'
 import UsersList from "../components/UsersList";
-import {PrismaClient} from "@prisma/client";
 
 const user = {
     name: 'Tom Cook',
@@ -198,8 +197,6 @@ export default function Home({users}) {
 }
 
 export const getStaticProps = async () => {
-    const prisma = new PrismaClient();
-
     return {
         props: {
             users: [
