@@ -23,7 +23,7 @@ export async function getServerSideProps() {
     let dev = process.env.NODE_ENV !== 'production';
     let {DEV_URL, PROD_URL} = process.env;
 
-    let response = await fetch(`${dev ? DEV_URL : PROD_URL}/api/users`);
+    let response = await fetch(`https://next-tailwind.aaron-dev.nl/api/users`);
     let data = await response.json();
 
     return {
